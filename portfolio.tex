@@ -1,0 +1,253 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Simple Sectioned Essay Template
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Default font size is 12pt, it can be changed here
+
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+\usepackage{hyperref}
+\usepackage{graphicx} % Required for including pictures
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images such as the example fish picture
+\linespread{1.2} % Line spacing
+
+%\setlength\parindent{0pt} % Uncomment to remove all indentation from paragraphs
+
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+
+\begin{document}
+
+%--------------------------------------------------------------------------------------
+%	TITLE PAGE
+%--------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+\textsc{\LARGE University of Helsinki}\\[1.5cm] % Name of your university/college
+\textsc{\Large MASTER'S PROGRAMME}\\[0.5cm] % Major heading such as course name
+\textsc{\large IN DATA SCIENCE}\\[0.5cm] % Minor heading such as course title
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Data Science Portfolio}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+\large Norbert \textsc{Eke} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Degree:} \\
+\large Bachelor of Science % Degree's Name
+\end{flushright}
+\end{minipage}\\[3cm]
+
+{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+%\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Include a table of contents
+
+\newpage % Begins the essay on a new page instead of on the same page as the table of contents 
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section{Introduction} % Major section
+This document will describe my contribution to 3 separate research projects that I have been part of at the University of British Columbia Okanagan. These 3 research projects have been completed during the summers of 2015, 2016 and 2017, while they were not part of my Bachelor’s degree. The names of the 3 projects are: Sentiment Analysis of Textual Matter, Exploratory Topic Modeling of Textual Data and finally, Feature Based Customer Opinion Mining. My roles in these projects have been Undergraduate Research Assistant for the first research project, then Undergraduate Researcher for the last 2 projects.
+
+%------------------------------------------------
+\section{Sentiment Analysis of Textual Matter} % section
+
+%------------------------------------------------
+\subsection{Project description} % Sub-section
+During the summer of 2015, I volunteered as a research assistant for a Big Data Sentiment Analysis research project. The project involved performing sentiment analysis on airline customer reviews and retrieving insights from the data, while performing extensive analysis of ratings and reviews provided by airlines passengers to over 200 different airlines. I contributed in the data collection and data cleaning process, then performed keyword and model based sentiment analysis on the data set. More information about the project can be found in \href{https://github.com/norberte/DataCollector/blob/master/docs/AirlinesPaper.pdf}{an early version of the paper} being in progress.
+
+\subsection{Area of Data Science and Skills Required} % Sub-section
+This project belongs to the textual data analysis and natural language processing \& understanding, more specifically, the sentiment analysis area of (textual) data science. Nonetheless, with larger dataset sized, this can be also considered big data analytics, as one would analyze hundreds of aspects of customer reviews about over 200 different airlines.
+Statistical skills, but most importantly, natural language processing and text processing knowledge and skills are required in this area of data science.
+\subsection{Learning Outcomes} % Sub-section
+  \begin{itemize}
+    \item Learn how to build a web scraper, and specific information off of hundreds of websites
+    \item Learn how to generate structures for the scraped textual data
+    \item Learn how to process, manipulate, and clean up textual data
+    \item Learn how to apply techniques like word and sentence level tokenization, lemmatization, stemming, phrase detection, stop-word removal and parts of speech tagging.
+    \item Learn how to perform keyword based and model based sentiment analysis.
+    \item Familiarize myself with industry level sentiment analysis tools, like \href{https://www.lexalytics.com/semantria/excel}{Semantria}
+    \item Learn the R statistical language and practicing object oriented design principles using Java
+  \end{itemize}
+\subsection{Results \& demonstration of newly learned skills} % Sub-section
+A research paper with the title \textit{A Sentiment Analysis of Customers Reviews of Airlines} is in the process of being published. This paper reports the results of an extensive analysis of ratings and reviews provided by airlines passengers.
+
+Since this project was somewhat successful, at least one seminar talk was given on this topic. Figure \ref{fig:sentAnalysisPoster} shows a seminar talk's poster, which was used to promote the research talk. The slides used for this research talk \href{https://github.com/norberte/DataCollector/blob/master/docs/Sentiment\%20Analysis_Talk_slides.pdf}{can be found on GitHub} \cite{sentAnalysisDocs}.
+
+As for demonstration of newly learned skills, some source code was produced during this project in the following 2 Github Repositories:
+\href{https://github.com/norberte/DataCollector}{Web-Scraper} and \href{https://github.com/norberte/Data_Manipulation_scripts}{Data Manipulation scripts}. An early version of \href{https://github.com/norberte/DataCollector/blob/master/docs/Sentiment\%20Analysis\%20Project\%20Write-Up.pdf}{my own write-up can be also found on Github}, as proof of contribution to the project.
+
+\begin{figure}[H]
+\center{\includegraphics[width=1.04\linewidth]{poster.jpg}}
+\caption{Sentiment Analysis Project’s Seminar Talk Poster}
+\label{fig:sentAnalysisPoster}
+\end{figure}
+
+%------------------------------------------------
+\section{Exploratory Topic Modeling of Textual Data} % Major section
+\subsection{Project Description} % Sub-section
+During the months of May and June of 2016 I initiated a Statistical Machine Learning project, involving research in Topic Modeling and Natural Language Processing. The objective of the project was to explore the applicability of machine learning algorithms in learning and interpreting preprocessed textual data. My contributions included the design of an algorithm to combine topic modeling and deep learning models to extract insight from the data.
+
+\subsection{Area of Data Science and Skills Required} % Sub-section
+This project is a combination of statistical textual analysis, deep learning and natural language processing. The statistical topic models try to identify topics within the data, while the deep learning language models try to 'interpret' the textual data. Some efforts were made to explore the high dimensional document and word embeddings coming out of the Doc2Vec and Word2Ved deep learning language models. Dimensionality reduction using Classical Multidimensional Scaling and Principal Component Analysis and Cluster Analysis using k-means clustering and hierarchical clustering were performed, as exploratory data analysis. 
+
+Skills, knowledge and application of statistical topic models like LDA, LSI and HDP is required, while applying deep learning language models like Doc2Vec and Word2Vec is crucial. It is also beneficial to understand and know how to apply various text processing techniques, while having a solid background in natural language processing, to be able to handle subjective textual data. The knowledge and application of various data mining and data analysis tools and techniques is also bonus, since one can unleash the powers of statistics and data analytics by performing exploratory data analysis. 
+
+\subsection{Learning Outcomes} % Sub-section
+\begin{itemize}
+    \item Learn how to apply various statistical topic models (LDA, LSI, HDP) to subjective, unstructured, messy textual data 
+    \item Learn how to make various deep learning language models interact with topic models (Word2Vec and Doc2Vec interacting with LDA and LSI).
+    \item Learn how to combine natural language processing techniques with deep learning language models and statistical topic models.
+    \item Learn what are the best text preprocessing techniques to be used alongside deep learning language models and statistical topic model
+    \item Learn how to experiment with dimensionality reduction and clustering analysis to extract insight from the data.
+    \item Learn the programming language called Python and practice its use in data science and analytics
+  \end{itemize}
+  
+\subsection{Results \& demonstration of newly learned skills} % Sub-section
+As previously mentioned, this project was an attempt at information retrieval from subjective textual data like customer reviews by combining topic models, deep learning and natural language processing using exploratory text mining.
+
+With the limited amount of time during the summer of 2016, some hidden characteristics and features have been extracted from the textual data using the combination of topic models and deep learning language models, but nothing of major significance was found by the end of the project. Unfortunately, my preliminary results from exploratory text mining were not convincing enough for a potential publication, or even a formal write-up. 
+
+My conclusion for this project was that it is definitely possible to extract insight from textual data using deep learning language models and statistical topic models, but it was not clear how exactly they will interact with natural language processing techniques in order to provide insight from data. This project's results only served as playground for my 2017 research project described in section 4, as the project described in section 4 was built upon the lessons learned from this exploratory project.
+
+Some preliminary status reports from the exploratory research work can be found on \href{https://github.com/norberte/DeepNLP-TopicModelling/blob/master/Meeting\%20slides.pdf}{my GitHub page}, with \href{https://github.com/norberte/DeepNLP-TopicModelling/blob/master/Status\%20report\%20(2).pdf}{2 different meeting notes}.
+Most of the unstructured, raw research code can be also found on my GitHub page, on the projects \href{https://github.com/norberte/DeepNLP-TopicModelling}{Github repository}\cite{GitHubDeepNLP}.
+
+Figure \ref{fig:topicModels} shown below represents a quick overview of my understanding of topic models: what are they, how they work, what is each model's advantage, and how to estimate the number of topics within some target documents.
+
+\begin{figure}[H]
+\center{\includegraphics[width=1.1\linewidth]{topicModels.JPG}}
+\caption{Comparison of 3 different Topic Models}
+\label{fig:topicModels}
+\end{figure}
+
+%------------------------------------------------
+\section{Feature Based Opinion Mining} % Major section
+\subsection{Project Description} % Sub-section
+In March 2017 I received an Undergraduate Research Award from University of British Columbia Okanagan to work on my own research project. This project involved deep learning using word embeddings applied in feature based opinion mining. The goal was to explore the possibility of designing an automated technique to detect opinion phrases in subjective textual data.
+
+\subsection{Area of Data Science and Skills Required} % Sub-section
+This project is a combination of textual data analysis, deep learning, data mining and natural language processing \& understanding. Deep learning language models try to 'interpret' the textual data, then data mining techniques try to find hidden links within the high dimensional data, which can be used to extract features from the text, then use statistical classification models to classify whether a certain word-pair is an an opinion phrase or not.
+
+Skills, knowledge and application of statistical predictive models, deep learning language models and data mining techniques is required. It is also beneficial to understand and know how to apply various text processing techniques, while having a solid background in natural language processing, to be able to handle subjective textual data.
+
+\subsection{Learning Outcomes} % Sub-section
+\begin{itemize}
+    \item Learn how to design a modern approach to the feature based opinion mining problem, using less natural language processing, and more deep learning. Figure \ref{fig:technique} shows the designed technique's composition in one diagram.
+    \item Learn how to apply deep learning models to messy, unstructured, subjective customer reviews (various Word2Vec models)
+    \item Learn how to perform dependency parsing on messy, unstructured, subjective textual data (using Stanford Dependency Parser and SpaCy (industry-level) Dependency parser)
+    \item Learn how to train, evaluate and validate the performance of various types of statistical classification models (SVM, LASSO, LDA, QDA, Random Forest, Bagging, Gradient Boosting) on Feature based Opinion Mining benchmark datasets
+    \item Learn how to investigation of the relationship between feature words and descriptor words, which resulted with the discovery of feature-descriptor relation vectors
+    \item Learn how to perform feature extraction and apply various data mining techniques to find hidden features within the high dimensional word embedding data
+    \item Learn how to perform binary sentiment classification on opinion phrase polarity, to decide whether an opinion was used in a positive or negative context 
+    \item Learn how to approach the problem of feature based opinion mining in a new, innovative, modern and unique way
+    \item Gain more practical knowledge of statistical packages in R and machine learning libraries in Python
+  \end{itemize}
+  
+\subsection{Results \& demonstration of newly learned skills} % Sub-section
+On June 17th, 2017 I gave a conference talk at the Canadian Undergraduate Computer Science Conference (CUCSC 2017), organized at University of Toronto. My talk included ongoing research work on designing \textit{A Modern Approach to Feature Based Customer Opinion Mining}, presenting partial results and hopes of improvements on the technique. Slides from this conference talk can be found on \href{https://github.com/norberte/Feature-Based-Opinion-Mining/blob/master/CUCSC\%202017\%20presentation.pdf}{my Github page} \cite{CUCSC_slides}. Video recording of the talk can be found on \href{https://www.linkedin.com/pulse/my-first-research-talk-conference-norbert-eke/}{my LinkedIn page} \cite{CUCSC}.
+
+\begin{figure}[H]
+\center{\includegraphics[width=1.05\linewidth]{full_technique.JPG}}
+\caption{Diagram of the whole system of algorithms interacting with each other to create a modern Feature based Opinion Mining system}
+\label{fig:technique}
+\end{figure}
+
+By September 2017 the project reached its end, and the technique was successfully designed, with promising results showing 80 to 85\% accuracy on successfully (using an automated way) identifying opinion phrases from labeled benchmark data. Unfortunately the project's source code at the moment is just messy, not-perfectly-structured research code, but the good news is that it is open source, and it can be found in 
+\href{https://github.com/norberte/Feature-Based-Opinion-Mining}{one of my GitHub repositories} \cite{GitHubFBOM}. Detailed documentation for the source code is still on my (never ending) \textit{To Do list}.
+
+On September 20th, 2017 I gave a research talk at the Undergraduate Research Symposium, at University of British Columbia Okanagan. Slides from the research symposium talk can be found
+\href{https://github.com/norberte/Feature-Based-Opinion-Mining/blob/master/URA\%20Presentation\%202017.pdf}{on my Github page} \cite{URA_slides}. Video recording of the talk can be found on \href{https://www.linkedin.com/pulse/feature-based-customer-opinion-mining-research-project-norbert-eke/}{my LinkedIn page} \cite{URA}. A screen-shot of my abstract from the symposium, at University of British Columbia Okanagan can be seen in figure \ref{fig:abstract}.
+
+\begin{figure}[H]
+\center{\includegraphics[width=1.0\linewidth]{URA_abstract.JPG}}
+\caption{Abstract submitted to Undergraduate Research Symposium at UBCO}
+\label{fig:abstract}
+\end{figure}
+
+A brief summary of my research project, and my findings can be found on \href{https://github.com/norberte/Feature-Based-Opinion-Mining/blob/master/URA\%20Research\%20Summary.pdf}{my GitHub page} \cite{URA_summary}.
+
+The culmination of my undergraduate research project was the writing of my first research paper. At the time of this application, the paper is in the final review stages, being overlooked by my summer research supervisor, \href{http://stat.ok.ubc.ca/faculty/andrews.html}{Jeffrey Andrews}, an Assistant Professor in the Statistics department at University of British Columbia Okanagan. After one more extensive editing round, hopefully I could get the paper published. The current and up to date version of my research paper can be viewed on \href{https://github.com/norberte/Latex-Research-Paper/blob/master/Research\%20Paper.pdf}{my GitHub page} \cite{paper}.
+
+
+
+%--------------------------------------------------------------------------------
+%	CONCLUSION
+%--------------------------------------------------------------------------------
+\section{Conclusion} % Major section
+As a final point, I have an interesting curiosity towards what sorts of insight lie behind data. I enjoy performing various analyses, trying out different models or techniques, and eventually retrieving insight from the data. I call it passion for data science and analytics. As my research suggests, I am very passionate about applied machine learning, natural language understanding, data analytics, and most importantly data mining. I truly believe that a master's program in Data Science will help me learn more about my passions and it will catapult me towards my career goals of analyzing as much interesting data as possible.
+
+%--------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%--------------------------------------------------------------------------------
+
+\begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
+
+\bibitem[1]{sentAnalysisDocs}
+\href{https://github.com/norberte/DataCollector/tree/master/docs}{GitHub repo of the Sentiment Analysis Project Documents (2015)} 
+
+\bibitem[2]{CUCSC}
+\href{https://www.linkedin.com/pulse/my-first-research-talk-conference-norbert-eke/}{LinkedIn Article on Canadian Undergr. Computer Science Conference (2017)} 
+
+\bibitem[3]{URA}
+\href{https://www.linkedin.com/pulse/feature-based-customer-opinion-mining-research-project-norbert-eke/}{LinkedIn Article about Undergraduate Research Symposium talk (2017)} 
+
+\bibitem[4]{paper}
+\href{https://github.com/norberte/Latex-Research-Paper/blob/master/Research\%20Paper.pdf}{Feature Based Opinion Mining Research Paper (2017)} 
+
+\bibitem[5]{GitHubDeepNLP}
+\href{https://github.com/norberte/DeepNLP-TopicModelling}{GitHub repo of Topic Modeling  of Textual Data Exploratory Research (2016)} 
+
+\bibitem[6]{GitHubFBOM}
+\href{https://github.com/norberte/Feature-Based-Opinion-Mining}{GitHub repo of Feature Based Opinion Mining Research Project (2017)} 
+
+\bibitem[7]{CUCSC_slides}
+\href{https://github.com/norberte/Feature-Based-Opinion-Mining/blob/master/CUCSC\%202017\%20presentation.pdf}{Canadian Undergraduate Computer Science Conference Talk Slides (2017)} 
+
+\bibitem[8]{URA_slides}
+\href{https://github.com/norberte/Feature-Based-Opinion-Mining/blob/master/URA\%20Presentation\%202017.pdf}{Undergraduate Research Symposium Talk Slides (2017)}
+
+\bibitem[9]{URA_summary}
+\href{https://github.com/norberte/Feature-Based-Opinion-Mining/blob/master/URA\%20Research\%20Summary.pdf}{Undergraduate Research Project Summary (2017)} 
+
+ 
+\end{thebibliography}
+
+%--------------------------------------------------------------------------------------
+
+\end{document}
